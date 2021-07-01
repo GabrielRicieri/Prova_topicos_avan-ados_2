@@ -1,0 +1,24 @@
+{
+  "name": "prova-node-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "nyc mocha --reporter spec test/**/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "express": "^4.17.1",
+    "mocha": "^8.4.0",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.6.2",
+    "sinon": "^10.0.0"
+  },
+  "devDependencies": {
+    "nyc": "^15.1.0"
+  }
+}
