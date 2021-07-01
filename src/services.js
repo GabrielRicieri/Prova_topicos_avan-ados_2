@@ -31,7 +31,7 @@ const getBills = (req, res) => {
   else res.json({ result: returnDataARRAY }, 200);
 };
 
-const deleteBill = (req, res) => {
+const deleteBills = (req, res) => {
   var id = `${req.params.id}`;
   let valid = false;
   for (let i = 0; i < NEW_DATA.length; i++) {
@@ -48,7 +48,7 @@ const deleteBill = (req, res) => {
 };
 
 module.exports = {
-  deleteBill,
+  deleteBills,
   getBills,
   newBiils,
 };
